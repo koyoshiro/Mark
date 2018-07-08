@@ -1,0 +1,43 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-airbnb"
+    ],
+    "jsRules": {},
+    "rules": {
+        "max-file-line-count": [
+            true,
+            200
+        ],
+        "max-line-length": [
+            true,
+            {
+                "limit": 120,
+                "ignore-pattern": "^import"
+            }
+        ],
+        "ter-indent": [
+            true,
+            4
+        ],
+        "trailing-comma": [
+            false
+        ],
+        "import-name": [
+            false
+        ],
+        "jsx-equals-spacing": [
+            "always"
+        ],
+        "object-literal-sort-keys": false,
+        "ordered-imports": false,
+        "member-ordering": false,
+        "radix": false,
+        "no-bitwise": false,
+        "no-console": false,
+        "no-magic-numbers": true,
+        "no-increment-decrement": false
+    },
+    "rulesDirectory": []
+}

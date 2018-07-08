@@ -1,0 +1,36 @@
+{
+    "name": "MARK",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./dest/index.js",
+    "scripts": {
+        "test": "jest --coverage",
+        "tsb": "tsc",
+        "tsc": "tsc --w",
+        "lint": "tslint -c tslint.json 'src/**/*.ts' || true",
+        "tsdiagnosis": "tsc --noEmit || true",
+        "check": "npm run lint && npm run tsdiagnosis",
+        "precommit": "npm run check && npm test",
+        "ts:build": "echo '{\"env\": \"build\"}' > ./env.json && tsc --outDir ./dest || true"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+
+    },
+    "devDependencies": {
+        "@types/jest": "^22.1.3",
+        "es6-plato": "^1.0.17",
+        "jest": "^22.4.2",
+        "ts-jest": "^22.4.0",
+        "tslint": "^5.9.1",
+        "tslint-config-airbnb": "^5.7.0",
+        "typescript": "^2.7.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./commit-config.js"
+        }
+    }
+}
