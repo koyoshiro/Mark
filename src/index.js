@@ -1,9 +1,12 @@
 import { arrayExpansion } from './Array';
+import { dateExpansion } from './Date';
+import { objectExpansion } from './Object';
+import { stringExpansion } from './String';
+import { booleanExpansion } from './Boolean';
+
 
 arrayExpansion();
-
-const testA = [1, 2, 3, 4];
-
-const result = testA.all(x => x > 1);
-
-console.log(result);
+dateExpansion();
+objectExpansion();
+stringExpansion();
+booleanExpansion();

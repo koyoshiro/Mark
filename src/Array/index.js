@@ -11,6 +11,7 @@ import { pull, pullBy } from './Pull';
 import { reduceFilter } from './Reduce';
 import { remove } from './Remove';
 import { unique } from './Unique';
+import  { isEmpty, isNull, isValid } from '../Type/index';
 
 function arrayExpansion() {
     Array.prototype.all = all;
@@ -18,7 +19,7 @@ function arrayExpansion() {
     Array.prototype.max = max;
     Array.prototype.min = min;
     Array.prototype.count = count;
-    Array.prototype.difference = codifferenceunt;
+    Array.prototype.difference = difference;
     Array.prototype.differenceBy = differenceBy;
     Array.prototype.drop = drop;
     Array.prototype.dropRight = dropRight;
@@ -31,6 +32,9 @@ function arrayExpansion() {
     Array.prototype.reduceFilter = reduceFilter;
     Array.prototype.remove = remove;
     Array.prototype.unique = unique;
+    Array.prototype.isEmpty = isEmpty;
+    Array.prototype.isNull = isNull;
+    Array.prototype.isValid = isValid;
 };
 
 export {
