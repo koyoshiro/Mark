@@ -13,13 +13,14 @@ const Pull_1 = require("./Pull");
 const Reduce_1 = require("./Reduce");
 const Remove_1 = require("./Remove");
 const Unique_1 = require("./Unique");
+const index_1 = require("../Type/index");
 function arrayExpansion() {
     Array.prototype.all = All_1.all;
     Array.prototype.any = Any_1.any;
     Array.prototype.max = Compare_1.max;
     Array.prototype.min = Compare_1.min;
     Array.prototype.count = Count_1.count;
-    Array.prototype.difference = codifferenceunt;
+    Array.prototype.difference = Difference_1.difference;
     Array.prototype.differenceBy = Difference_1.differenceBy;
     Array.prototype.drop = Drop_1.drop;
     Array.prototype.dropRight = Drop_1.dropRight;
@@ -32,6 +33,9 @@ function arrayExpansion() {
     Array.prototype.reduceFilter = Reduce_1.reduceFilter;
     Array.prototype.remove = Remove_1.remove;
     Array.prototype.unique = Unique_1.unique;
+    Array.prototype.isEmpty = index_1.isEmpty;
+    Array.prototype.isNull = index_1.isNull;
+    Array.prototype.isValid = index_1.isValid;
 }
 exports.arrayExpansion = arrayExpansion;
 ;
