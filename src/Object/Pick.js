@@ -1,12 +1,12 @@
 function pick(obj, arr) {
-        arr.reduce(
+        return arr.reduce(
                 (acc, curr) => (curr in obj && (acc[curr] = obj[curr]), acc),
                 {}
         );
 }
 
 function pickBy(obj, fn) {
-        Object.keys(obj)
+        return Object.keys(obj)
                 .filter(k => fn(obj[k], k))
                 .reduce((acc, key) => ((acc[key] = obj[key]), acc), {});
 }
