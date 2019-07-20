@@ -327,3 +327,9 @@ null.isValid(); // false
 ```
 
 <br>[⬆ 返回](#说明)
+
+# Todo
+- [ ] publish npm package
+- [ ] support single/multiple cases
+- [ ] optimized/fix code
+- [ ] support single/multiple cases
