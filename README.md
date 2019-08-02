@@ -332,3 +332,4 @@ null.isValid(); // false
 - [ ] publish npm package
 - [ ] support single/multiple cases
 - [ ] optimized/fix code
+- [ ] change package name
